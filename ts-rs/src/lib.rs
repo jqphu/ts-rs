@@ -545,6 +545,9 @@ impl_tuples!(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10);
 #[cfg(feature = "bigdecimal-impl")]
 impl_primitives! { bigdecimal::BigDecimal => "string" }
 
+#[cfg(feature = "ethers-impl")]
+impl_primitives! { ethers::types::Address, ethers::types::U256 => "string" }
+
 #[cfg(feature = "uuid-impl")]
 impl_primitives! { uuid::Uuid => "string" }
 
